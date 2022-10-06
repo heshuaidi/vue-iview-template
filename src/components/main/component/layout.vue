@@ -21,7 +21,7 @@
         <Header :style="{padding: 0}" class="layout-header-bar">
           <Icon :class="rotateIcon" :style="{margin: '0 20px'}" type="md-menu" size="24" @click.native="collapsedSider" />
         </Header>
-        <Content :style="{margin: '20px', background: '#fff', minHeight: '260px'}">
+        <Content :style="{margin: '20px', background: '#fff', minHeight: 'calc(100vh - ( 10px + 24px + 24px + 24px + 22px ))'}">
           Content
         </Content>
       </Layout>
