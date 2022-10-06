@@ -5,6 +5,14 @@ const routes = [
     component: () => import('@/components/main'),
   },
   {
+    path: '/layout',
+    name: 'layout',
+    meta: {
+      hideInMenu: true,
+    },
+    component: () => import('@/components/main/component/layout.vue'),
+  },
+  {
     path: '/401',
     name: 'error_401',
     meta: {
