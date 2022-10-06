@@ -1,11 +1,16 @@
-export default [
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: () => import('@/components/main'),
+  },
   {
     path: '/401',
     name: 'error_401',
     meta: {
       hideInMenu: true,
     },
-    component: () => import('@/view/error-page/401.vue'),
+    component: () => import('@/views/error-page/401.vue'),
   },
   {
     path: '/500',
@@ -13,7 +18,7 @@ export default [
     meta: {
       hideInMenu: true,
     },
-    component: () => import('@/view/error-page/500.vue'),
+    component: () => import('@/views/error-page/500.vue'),
   },
   {
     path: '*',
@@ -21,6 +26,8 @@ export default [
     meta: {
       hideInMenu: true,
     },
-    component: () => import('@/view/error-page/404.vue'),
+    component: () => import('@/views/error-page/404.vue'),
   },
 ]
+
+export default routes

@@ -4,12 +4,12 @@
 
 <script>
 import error404 from '@/assets/images/error-page/error-404.svg'
-import errorContent from './error-content.vue'
+import ErrorContent from './error-content.vue'
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'Error404',
   components: {
-    errorContent,
+    ErrorContent,
   },
   data() {
     return {
